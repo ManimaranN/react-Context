@@ -8,7 +8,6 @@ function App() {
     <Provider>
       <div className="App">
         <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
           <h2>react appp for understanding the concept of context</h2>
           <ProductList />
         </header>

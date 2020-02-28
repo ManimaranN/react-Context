@@ -1,5 +1,7 @@
+//provider function for react Context named "CarContext" in ./Context.js
+
 import React, { useEffect } from "react";
-import Context from "./Context";
+import CarContext from "./CarContext";
 import { useState } from "react";
 
 const Provider = props => {
@@ -12,7 +14,7 @@ const Provider = props => {
   const [cars, setCars] = useState(carList);
 
   return (
-    <Context.Provider
+    <CarContext.Provider
       value={{
         cars: cars,
         incrementPrice: selectedId => {
@@ -29,7 +31,7 @@ const Provider = props => {
       }}
     >
       {props.children}
-    </Context.Provider>
+    </CarContext.Provider>
   );
 };
 

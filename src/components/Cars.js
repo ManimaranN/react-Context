@@ -1,9 +1,11 @@
+//this can be termed to be the consumer of CarContext using useContext
+
 import React, { Fragment, useContext, useEffect } from "react";
-import Context from "../context/Context";
+import CarContext from "../context/CarContext";
 import Car from "./Car";
 
 const Cars = () => {
-  const carDetails = useContext(Context);
+  const carDetails = useContext(CarContext);
   useEffect(() => {
     console.log(carDetails);
   }, [carDetails]);
